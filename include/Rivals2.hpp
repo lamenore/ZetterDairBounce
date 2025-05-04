@@ -1,3 +1,5 @@
+#pragma once
+
 #include <Unreal/Core/Math/MathFwd.hpp>
 #include <Unreal/Core/CoreTypes.hpp>
 #include <Unreal/UnrealCoreStructs.hpp>

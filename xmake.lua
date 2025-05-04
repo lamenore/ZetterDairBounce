@@ -1,21 +1,21 @@
 local projectName = "ZetterDairBounce"
 
 -- add_rules("mode.debug", "mode.release")
-add_requires("safetyhook", {configs = {runtimes = "MD"}})
--- includes("deps")
+
+includes("deps")
 
 set_languages("c++23")
 
 target(projectName)
-
+  
     add_rules("ue4ss.mod")
 
-    add_includedirs("include", { public = true })
-    add_packages("safetyhook")
-    
+    add_includedirs("include")
+    add_packages("safetyhook", "kananlib")
+
+    add_headerfiles("include/*.hpp")
     add_files("src/*.cpp")
-    
-    
+
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
